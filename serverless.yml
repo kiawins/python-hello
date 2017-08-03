@@ -1,0 +1,36 @@
+service: python-hello
+
+frameworkVersion: ">=1.12.0 <2.0.0"
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    zip: true
+
+provider:
+  name: aws
+  region: us-west-2
+  stage: dev
+  profile: aws-personal
+  runtime: python2.7
+  environment:
+    DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
+
+functions:
+  get:
+    handler: handlers/get.html
+    events:
+      - http:
+          path: /index.html
+          method: get
+          cors: true
+
+  # update:
+  #   handler: handlers/update.update
+  #   events:
+  #     - http:
+  #         path: todos/{id}
+  #         method: put
+  #         cors: true
