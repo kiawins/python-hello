@@ -86,6 +86,10 @@ crc@^3.4.4:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/crc/-/crc-3.4.4.tgz#9da1e980e3bd44fc5c93bf5ab3da3378d85e466b"
 
+docker-lambda@^0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/docker-lambda/-/docker-lambda-0.13.3.tgz#dd170f99e84a8cdefaee5cee7134e4728c1c53a0"
+
 end-of-stream@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.4.0.tgz#7a90d833efda6cfa6eac0f4949dbb0fad3a63206"

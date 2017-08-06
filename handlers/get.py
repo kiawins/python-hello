@@ -7,8 +7,12 @@ def html(event, context):
     <html>
         <body>
             <h1>
-                Hello world
+                Upload a csv to get the graphs
             </h1>
+            <form action="graph" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="text/csv"/>
+                <input type="submit"/>
+            </form>
         </body>
     </html>
     """

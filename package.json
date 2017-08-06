@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "docker-lambda": "^0.13.3",
     "serverless-python-requirements": "^2.5.0"
   }
 }
