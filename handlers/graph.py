@@ -22,6 +22,7 @@ def post(event, context):
                 Here are the results
             </h1>
             <div>{data}</div>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         </body>
     </html>
     """.format(data=pd.read_csv(StringIO(csv_str)))
